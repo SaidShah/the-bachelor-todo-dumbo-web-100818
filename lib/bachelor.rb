@@ -9,6 +9,7 @@ def get_first_name_of_season_winner(data, season)
         data_name.each do |x,y|
           if x == :name 
             return y
+          end
       end
     end
   end

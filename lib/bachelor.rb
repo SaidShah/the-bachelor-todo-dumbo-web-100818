@@ -5,8 +5,10 @@ def get_first_name_of_season_winner(data, season)
   
   data.each do |season_num, data_in_season|
     if season_num == season
-      data_in_season.each do |dats_name, data_value|
-        binding.pry
+      data_in_season.each do |data_name|
+        data_name.each do |x,y|
+          binding.pry
+      end
     end
   end
  end

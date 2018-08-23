@@ -8,7 +8,6 @@ def get_first_name_of_season_winner(data, season)
       data_in_season.each do |data_name|
         data_name.each do |x,y|
           if x == "name" 
-            binding.pry
             return y
           end
       end

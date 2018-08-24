@@ -20,7 +20,9 @@ def get_contestant_name(data, occupation)
  
  data.each do |season_num, data_in_season|
   data_in_season.each do |data_type|
-      binding.pry
+      data_type.each do ||
+        
+    end
   end
  end
  

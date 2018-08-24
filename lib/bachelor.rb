@@ -74,14 +74,14 @@ def get_average_age_for_season(data, season)
         data_in_season.each do |data_type|
           data_type.each do |age, value|
             if age == "age"
-              average_age+=value.to_f  
+              average_age+=value.to_i
               counter +=1 
          end
        end
      end
    end
   end
-  (average_age/counter).to_i
+  (average_age/counter).ceil 
 end
 
 

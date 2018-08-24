@@ -67,14 +67,21 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  
+  average_age = 0
+  counter = 0 
     data.each do |season_num, data_in_season|
       if season_num == season
-  data_in_season.each do |data_type|
-     binding.pry
+        data_in_season.each do |data_type|
+          data_type.each do |age, value|
+            if age == "age"
+              average_age+=value.to_i   
+              counter +=1 
+         end
+       end
+     end
+   end
   end
- end
-end
+  (average_age/counter)
 end
 
 

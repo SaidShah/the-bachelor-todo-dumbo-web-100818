@@ -50,7 +50,19 @@ end
 
 def get_occupation(data, hometown)
   
-  
+   data.each do |season_num, data_in_season|
+  data_in_season.each do |data_type|
+      data_type.each do |stat_type, value|
+        if stat_type == "hometown" && value == hometown
+          data_type.each do |looking_for, value_needed|
+            if looking_for == "occupation"
+              return value_needed
+          end
+        end
+      end
+    end
+  end
+ end
   
 end
 

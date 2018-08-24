@@ -21,7 +21,11 @@ def get_contestant_name(data, occupation)
  data.each do |season_num, data_in_season|
   data_in_season.each do |data_type|
       data_type.each do |stat_type, value|
-        
+        if stat_type == "occupation"
+          data_type.each do |looking_for, value_needed|
+            
+        end
+      end
     end
   end
  end
